@@ -1,0 +1,13 @@
+load("@buildifier_prebuilt//:rules.bzl", "buildifier")
+
+buildifier(
+    name = "buildifier.check",
+    exclude_patterns = ["./.git/*"],
+    lint_mode = "fix",
+    mode = "fix",
+)
+
+alias(
+    name = "buildifier",
+    actual = ":buildifier.check",
+)
