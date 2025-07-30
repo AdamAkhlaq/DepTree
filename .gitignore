@@ -1,0 +1,61 @@
+# DepTree Project .gitignore
+
+# ========================================
+# DOCUMENTATION
+# ========================================
+TODO.md
+design-doc.md
+.github/copilot-instructions.md
+
+# ========================================
+# BAZEL BUILD SYSTEM
+# ========================================
+bazel-*
+.bazel-cache/
+
+# ========================================
+# FRONTEND (NEXT.JS + NODE.JS)
+# ========================================
+node_modules/
+frontend/.next/
+frontend/out/
+.env
+.env.local
+.env.production.local
+.vercel
+.eslintcache
+*.tsbuildinfo
+
+# ========================================
+# BACKEND (JAVA + AWS LAMBDA)
+# ========================================
+*.class
+*.jar
+target/
+lambda-deployment.zip
+dist/lambda/
+
+# ========================================
+# AWS INFRASTRUCTURE
+# ========================================
+.aws-sam/
+
+# ========================================
+# IDE FILES
+# ========================================
+.idea/
+.vscode/
+*.iml
+
+# ========================================
+# OPERATING SYSTEM
+# ========================================
+.DS_Store
+Thumbs.db
+
+# ========================================
+# LOGS AND TEMP FILES
+# ========================================
+*.log
+tmp/
+.cache/
